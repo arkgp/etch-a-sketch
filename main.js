@@ -39,7 +39,14 @@ function deleteGrid() {
 
 function resetGrid() {
     const gridSquare = document.querySelectorAll('.inner-square');
-    gridSquare.forEach( square => square.style.backgroundColor = '#FFF');
+    gridSquare.forEach( square => {
+        square.style.backgroundColor = '#FFF';
+        square.style.opacity = '1';
+        if (colorMode === 'fade') {
+            square.style.backgroundColor = '#000';
+            square.style.opacity = '0';
+        }
+    });
 }
 
 function addHover() {
