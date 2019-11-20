@@ -1,0 +1,49 @@
+.black-bg-color {
+    background-color: black;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.grid-row {
+    flex: 1 1 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.grid-square {
+    flex-grow: 1;
+    
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.inner-square {
+    height: 100%;
+    width: 100%;
+}
